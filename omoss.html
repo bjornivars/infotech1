@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Om oss - InfoTech</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-bg">
+                <a class="navbar-brand" href="index.html"><img src="images/optimizilla/liggende_logo_hvit-min.png" alt="Logo InfoTech"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <ul class="navbar-move navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Hjem</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html#maincontent" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Produkter &amp; tjenester
+                            </a>
+                            <div class="dropdown-menu nav-bg" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="konsulent.html">Konsulenttjenester</a>
+                                <a class="dropdown-item" href="bkl.html">Byggekortleser</a>
+                                <a class="dropdown-item" href="itbase.html">ITBASE prosjektweb</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontaktoss.html">Kontakt oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="omoss.html">Om oss</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="bg"></div>
+            <div class="jumbotron jumbo-omoss">
+                <div class="container">
+                    <h1 class="display-4 break-word">Om oss</h1>
+                    <img class="icon-img" src="images/optimizilla/omoss-ikon-min.png" alt="Logo">
+                </div>
+            </div>
+
+
+            <!-- REF navbar -->
+            <div class=" navbar-light navbar-expand-md page-nav fixed-top" id="maincontent">
+                <ul class="navbar-nav justify-content-center nav-bg">
+                    <li class="navbar-item"><a class="page-nav-item" href="#ominfotech">Om InfoTech</a> </li>
+                    <li class="navbar-item"><a class=" page-nav-item" href="#medarbeidere">Medarbeidere </a></li>
+                    <li class="navbar-item"><a class=" page-nav-item" href="#referanser">Referanser</a></li>
+                </ul>
+            </div>
+
+            <!-- Marketing messaging and featurettes
+            ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+
+            <div class="container marketing">
+
+                <!-- START THE FEATURETTES -->
+
+
+                <div class="row featurette">
+
+                    <div class="col-md-5 offset-md-1" id="ominfotech">
+                        <h2 class="margin-top"> Om InfoTech </h2>
+                        <p class="lead"> Infotech AS ble etablert i 1993. Vår hovedvirksomhet er konsulenttjenester, rådgivning og utvikling av skreddersydde IT-løsninger. Vi har lang erfaring og er en samarbeidspartner som løser de fleste utfordringer.
+                        </p>
+                    </div>
+                    <div class="col-md-5 offset-md-0">
+                        <h2 class="margin-top"> Arbeidsplattform </h2>
+                        <p class="lead"> Vår spesialisering er PC-løsninger for Microsoft Windows plattformene. Mesteparten av vår programvareutvikling er basert på Microsofts.NET teknologi med Microsoft Visual Studio.NET som det primære utviklingsverktøy. Med våre web-servere tilbyr vi tradisjonelle og skreddersydde web-tjenester.
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1">
+                        <h2 class="margin-top"> Kontakt oss </h2>
+                        <p class="lead">
+                            Infotech AS <br>
+                            Kanalveien 105A<br>
+                            5068 Bergen<br>
+                            Telefon: <a href="tel:+4755270030">55 27 00 30</a><br>
+                            E-post:<a href="mailto:post@infotech.no">post@infotech.no</a>
+                        </p>
+                        <p class="ansatte-ikon"><a class="btn btn-secondary" href="kontaktoss.html" role="button">Ta kontakt</a></p>
+                    </div>
+                    <div class="col-md-5 offset-md-0">
+                        <h2 class="margin-top"> Kart </h2>
+                        <p class="lead"> Her finner du oss</p>
+                        <div id="map" style="width:100%;height:400px;background:yellow"></div>
+
+                        <script>
+                            function initMap() {
+                                var myLatLng = {lat: 60.360233, lng: 5.343294};
+
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 13,
+                                    center: myLatLng
+                                });
+
+                                var marker = new google.maps.Marker({
+                                    position: myLatLng,
+                                    map: map,
+                                    title: 'Infotech AS'
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette margin-top">
+
+                    <div id="medarbeidere" class="col-md-10 offset-md-1">
+                        <h2 class="margin-top margin-bottom"> Medarbeidere </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"> <span class="font-weight-bold">Eirik Roald Ree </span><br>
+                            Daglig leder <br>
+                            Utdannelse: Sivilingeniør i Datateknikk NTNU (M.Sc.)<br>
+                            Telefon: 55 27 00 33<br>
+                            Mobil: 958 45 791<br>
+                            E-post: eirik@infotech.no
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Dag Haugen</span> <br>
+                            Styreleder, økonomiansvarlig<br>
+                            Utdannelse: Dataingeniør<br>
+                            Telefon: 55270030 / 55258000<br>
+                            Mobil: 951 34 654<br>
+                            E-post: dag@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Andreas Wie</span><br>
+                            Salgssjef<br>
+                            Telefon: 55 27 00 32<br>
+                            Mobil: 995 79 479<br>
+                            E-post: andreas@infotech.no<br>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Håkon A. Fimland </span><br>
+                            Selger<br>
+                            Mobil: 41 00 08 58<br>
+                            E-post: hakon@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Lea Sif Valsdottir</span> <br>
+                            Kontor Infotech Access<br>
+                            Telefon: 53 51 93 52<br>
+                            E-post: lea@infotechaccess.se<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Gry Helene Tørresdal</span><br>
+                            Koordinator<br>
+                            Telefon: 55 27 00 31<br>
+                            Mobil: 480 51 923<br>
+                            E-post: gry@infotech.no<br>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Theresa Marie Sperre </span><br>
+                            Kontormedarbeider<br>
+                            Telefon: 55 27 00 30<br>
+                            E-post: theresa@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Eivind Aksland</span> <br>
+                            Systemutvikler, driftsleder<br>
+                            Utdannelse: Cand Mag Informatikk<br>
+                            Telefon: 55 27 00 30<br>
+                            Mobil: 918 14 308<br>
+                            E-post: eivind@infotech.no<br>
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Steinar Aksland </span><br>
+                            Systemutvikler<br>
+                            Utdannelse: Høgskoleingeniør data<br>
+                            Telefon: 53 51 93 22<br>
+                            Mobil: 918 14 309<br>
+                            E-post: steinar@infotech.no<br>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Jo Inge Hjerkinn </span><br>
+                            Systemutvikler web<br>
+                            Utdannelse: Høgskolekandidat i IT<br>
+                            Telefon: 53 50 44 72<br>
+                            Mobil: 901 57 607<br>
+                            E-post: jo.inge@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Bjørn Edvardsen</span> <br>
+                            Drift og utvikling<br>
+                            Telefon: 55 27 00 30<br>
+                            E-post: be@infotech.no<br>
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Magnus Andersen </span><br>
+                            Forskning og utvikling<br>
+                            Telefon: 55 27 00 30<br>
+                            E-post: magnus@infotech.no<br>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin">
+                            <span class="font-weight-bold">Kjetil Wikestad </span><br>
+                            Systemutvikler web<br>
+                            Telefon: 53 50 37 21<br>
+                            Mobil: 950 89 065<br>
+                            E-post: kjetil@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Christer van der Meeren </span><br>
+                            Systemutvikler<br>
+                            Utdannelse: Doktorgrad i fysikk ved UiB<br>
+                            Telefon: 53 50 02 01<br>
+                            Mobil: 470 75 792<br>
+                            E-post: christer@infotech.no<br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="images/optimizilla/ansatte-min.png" class="img-thumbnail ansatte-ikon" alt="Ansatte ikon">
+                        </div>
+                        <p class="p-margin"><span class="font-weight-bold">Gustav Meyer </span><br>
+                            Tekniker, utvikling<br>
+                            Telefon: 55 27 00 30<br>
+                            E-post: gustav@infotech.no<br>
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+
+                    <div id="referanser" class="col-md-10 offset-md-1">
+                        <h2 class="margin-top"> Referanser </h2>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 ref-logoer">
+                        <h3 class="margin-top break-word"> TERO MARINE </h3>
+                        <p class="lead break-word"> Tero Marine AS holder til i Bergen og er leverandør av software til shippingindustrien i Norge og internasjonalt. Infotech har i flere år bidratt med konsulent-tjenester til Tero Marines prosjekter og applikasjoner. Vi har vært med på utvikling av personalhåndteringsprogrammet TM Crew, innkjøpssystemet TM PO og nå sist deres nye hovedapplikasjon TM Master v2.
+                        </p>
+                        <img src="images/optimizilla/tero1-min.jpg" alt="Tero Marine Logo"/>
+                    </div>
+                    <div class="col-md-5 offset-md-0 ref-logoer">
+                        <h3 class="margin-top break-word"> NORDAN </h3>
+                        <p class="lead break-word"> NorDan AS - Norges største produsent av dører og vinduer - har benyttet seg av våre tjenester i en årrekke. De siste årene har vi utviklet et omfattende system som kalles NorDan PI (produkt-integrator), som bl.a. omfatter et skreddersydd tilbuds- og ordresystem. Vi har også bidratt med intranettsider for NorDan.
+                        </p>
+                        <img src="images/optimizilla/nordan1-min.jpg" alt="Nordan Logo"/>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 ref-logoer">
+                        <h3 class="margin-top break-word"> LAB ENTREPRENØR AS </h3>
+                        <p class="lead break-word">Infotech har levert IT-tjenester for LAB i flere år - der vi har hatt ansvar for deres lokale nettverk og oppsett av IT-utstyr på byggeplasser. Vårt system for webhotell på byggeplasser (ITBASE) ble i sin tid utviklet på oppdrag fra LAB.
+                        </p>
+                        <img src="images/lab.jpg" alt="LAB ENTREPRENØR AS Logo"/>
+                    </div>
+                    <div class="col-md-5 offset-md-0 ref-logoer">
+                        <h3 class="margin-top break-word"> KNUTSEN OAS SHIPPING
+                            AS </h3>
+                        <p class="lead break-word"> Infotech har bistått Knutsen OAS shipping med installasjon av datautstyr, vedlikehold og support på deres 35 skip verden over.</p>
+                        <img src="images/oas.jpg" alt="Knutsen oas shipping as Logo"/>
+                    </div>
+
+                </div>
+                <!-- /END THE FEATURETTES -->
+
+            </div><!-- /.container -->
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Informasjon</h4>
+                        <ul>
+                            <li><a href="bkl.html#priser">Garanti</a></li>
+                            <li><a href="../infotech.html">Back to portfolio</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Brukerstøtte</h4>
+                        <ul>
+                            <li><a href="https://get.teamviewer.com/computesupport">Fjernstyring</a></li>
+                            <li><a href="faq.html">Spørsmål &amp; svar (FAQ) </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Produkter</h4>
+                        <ul>
+                            <li><a href="itbase.html">ITBASE Prosjektweb</a></li>
+                            <li><a href="bkl.html">Byggekortleser</a></li>
+                            <li><a href="konsulent.html">Konsulenttjenester</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Kontaktinfo</h4>
+                        <ul>
+                            <li>Kanalveien 105 A<br>5068 Bergen</li>
+                            <li>Tlf: <a href="tel:+4755270030">55 27 00 30</a></li>
+                            <li>E-post: <a href="mailto:post@infotech.no">post@infotech.no</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <!-- Google Maps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2JsOqqcQKwH2bzotwM_rRtVYpnHkQ1Nc&callback=initMap"></script>
+    </body>
+</html>
